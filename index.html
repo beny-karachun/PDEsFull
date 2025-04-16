@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDE Practice Course Hub</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px; /* Add padding around the body */
+            background-color: #f0f4f8; /* Light blue-grey background */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align container to top */
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 700px;
+            width: 95%; /* Responsive width */
+            margin: 30px auto;
+            background: #fff;
+            padding: 25px 35px; /* More padding inside */
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #1a237e; /* Dark blue */
+            margin-bottom: 20px;
+            border-bottom: 3px solid #3949ab; /* Slightly darker blue */
+            padding-bottom: 12px;
+            font-weight: 600;
+        }
+        p {
+            color: #455a64; /* Blue-grey text */
+            margin-bottom: 35px;
+            font-size: 1.1em;
+        }
+        .button-container {
+            display: grid; /* Use grid for better alignment */
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+            gap: 18px; /* Spacing between buttons */
+            justify-content: center;
+        }
+        button {
+            padding: 14px 20px;
+            font-size: 16px;
+            background-image: linear-gradient(to right, #42a5f5 , #1e88e5); /* Blue gradient */
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+            font-weight: 500;
+        }
+        button:hover {
+            background-image: linear-gradient(to right, #1e88e5 , #1565c0); /* Darker gradient on hover */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transform: translateY(-2px); /* Slight lift effect */
+        }
+        button:active {
+             transform: translateY(0px); /* Press effect */
+             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        /* Grouping headers */
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            color: #1a237e;
+            text-align: left;
+            border-bottom: 1px dashed #aaa;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PDE Practice Course Hub</h1>
+        <p>Select a topic or day to begin practicing. Each page will open in a new window/tab.</p>
+
+        <h2>Core Methods & Classification</h2>
+        <div class="button-container">
+            <button onclick="window.open('basic.html', '_blank')">Basic ODE Techniques for PDEs</button> <!-- Added Button -->
+            <button onclick="window.open('day1.html', '_blank')">Day 1: Characteristics & Classification</button>
+            <button onclick="window.open('day2.html', '_blank')">Day 2: Characteristics Practice</button>
+            <button onclick="window.open('day2andahalf.html', '_blank')">Day 2.5: Existence & Uniqueness</button>
+            <button onclick="window.open('canonical.html', '_blank')">Canonical Forms</button>
+        </div>
+
+        <h2>Wave Equation</h2>
+         <div class="button-container">
+            <button onclick="window.open('day3.html', '_blank')">Day 3: D'Alembert's Formula</button>
+            <button onclick="window.open('wave_extensions.html', '_blank')">Wave Eq. Extensions (Semi-Infinite)</button>
+            <button onclick="window.open('day5.html', '_blank')">Day 5: Wave Eq. (Separation of Variables)</button>
+         </div>
+
+        <h2>Heat Equation</h2>
+         <div class="button-container">
+             <button onclick="window.open('day4.html', '_blank')">Day 4: Heat Eq. (Separation of Variables)</button>
+        </div>
+
+        <h2>Laplace Equation</h2>
+        <div class="button-container">
+            <button onclick="window.open('day6.html', '_blank')">Day 6: Laplace Eq. (Rectangle)</button>
+            <button onclick="window.open('laplace_polar.html', '_blank')">Laplace Eq. (Polar Coordinates)</button>
+            <button onclick="window.open('laplace_properties.html', '_blank')">Laplace Eq. Properties (Green's, Max/Mean)</button>
+        </div>
+
+        <h2>Analysis Tools</h2>
+        <div class="button-container">
+            <button onclick="window.open('fourier_sturm.html', '_blank')">Sturm-Liouville & Fourier Series</button>
+            <button onclick="window.open('uniqueness_maxprinciple.html', '_blank')">Uniqueness & Maximum Principles</button>
+            <button onclick="window.open('fourier_transform.html', '_blank')">Fourier Transforms</button>
+         </div>
+
+        <h2>Review</h2>
+        <div class="button-container">
+            <button onclick="window.open('day7.html', '_blank')">Day 7: Mixed Review / Exam Practice</button>
+        </div>
+    </div>
+</body>
+</html>

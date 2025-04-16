@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDE 1-Week Practice Course</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #eef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Ensure container takes full height */
+        }
+        .container {
+            max-width: 600px;
+            width: 90%; /* Responsive width */
+            margin: 30px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        p {
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column; /* Stack buttons vertically */
+            gap: 15px; /* Spacing between buttons */
+            align-items: center; /* Center buttons horizontally */
+        }
+        button {
+            padding: 12px 25px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+            width: 80%; /* Make buttons wider */
+            max-width: 300px; /* Optional: Limit max button width */
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        button:active {
+             transform: scale(0.98); /* Slight press effect */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PDE 1-Week Practice Course</h1>
+        <p>Select a day to begin practicing. Each day's page will open in a new window/tab.</p>
+
+        <div class="button-container">
+            <button onclick="window.open('day1.html', '_blank')">Day 1: Characteristics & Classification</button>
+            <button onclick="window.open('day2.html', '_blank')">Day 2: Characteristics & Classification (Practice)</button>
+            <button onclick="window.open('day3.html', '_blank')">Day 3: D'Alembert's Formula (Wave Eq.)</button>
+            <button onclick="window.open('day4.html', '_blank')">Day 4: Separation of Variables (Heat Eq. - Dirichlet)</button>
+            <button onclick="window.open('day5.html', '_blank')">Day 5: Separation of Variables (Wave Eq. - Dirichlet)</button>
+            <button onclick="window.open('day6.html', '_blank')">Day 6: Separation of Variables (Laplace Eq. - Rectangle)</button>
+            <button onclick="window.open('day7.html', '_blank')">Day 7: Mixed Review / Exam Practice</button>
+        </div>
+    </div>
+</body>
+</html>
